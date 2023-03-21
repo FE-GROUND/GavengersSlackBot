@@ -1,0 +1,23 @@
+{
+  "name": "gavengers_bot",
+  "version": "1.0.0",
+  "main": "src/app.ts",
+  "license": "MIT",
+  "scripts": {
+    "deploy:dev": "NODE_ENV=development sls deploy --verbose",
+    "local": "serverless invoke local -f gavengers ",
+    "build": "serverless deploy --region ap-northeast-2"
+  },
+  "dependencies": {
+    "@slack/bolt": "^3.12.2",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.3",
+    "dotenv-cli": "^7.1.0",
+    "serverless-dotenv-plugin": "^4.0.2",
+    "serverless-offline": "^12.0.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
+}
